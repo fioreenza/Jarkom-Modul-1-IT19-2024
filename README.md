@@ -27,5 +27,17 @@
 5. Flag ditemukan
    ![image](https://github.com/user-attachments/assets/5f1018f6-44e1-4e94-aaa2-6e4b0245dae7)
 
- 
+ ## Write Up Corporate Breach
+1. Terdapat breach.pcap dan nc 10.15.42.60 51000 pada soal.
+2. Buka nc nc 10.15.42.60 51000 di terminal dan breach.pcap pada wireshark
+3. Filter packet yang memiliki protocol http
+   ![image](https://github.com/user-attachments/assets/b66b586f-cd98-482b-94e8-7249b4028b1c)
+4. Dari situ bisa didapatkan nama attacker yang ditanyakan
+   ![image](https://github.com/user-attachments/assets/68327636-6496-4826-ac77-be9f316a1f44)
+5. Didapatkan email dan password yang digunakan untuk login
+   ![image](https://github.com/user-attachments/assets/53f79d85-aa55-47e0-ab1e-39d985ddc764)
+6. Lalu ditemukan flagnya
+   ![image](https://github.com/user-attachments/assets/0c78b378-6380-4c88-9ed2-6dbbf711c981)
+
+
 
