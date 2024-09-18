@@ -64,6 +64,22 @@
 6. Lalu dapat ditemukan flagnya
    ![image](https://github.com/user-attachments/assets/d64d1c0f-7c14-47a3-96c8-0c3927d6adae)
 
-   
+
+## Write Up FTP Login
+1. Terdapat ftplogin.pcapng dan nc 10.15.42.60 48500 pada soal.
+2. Buka ncat 10.15.42.60 48500 di terminal dan ftplogin.pcapng pada wireshark
+3. Ditemukan service yang digunakan
+   ![image](https://github.com/user-attachments/assets/df45d86f-91ab-49c7-a2bf-2790511b73a2)
+4. File yang dikirim adalah g0tcha.cpp
+   ![image](https://github.com/user-attachments/assets/0945a126-e4d3-4715-8869-25835a036246)
+5. String yang ditinggalkan dapat dilihat dari follow TCP Stream dari FTP Data
+   ![image](https://github.com/user-attachments/assets/ebe9b920-6644-4432-bdb8-f799e64cbedd)
+6. Didapatkan code ini lalu run
+   ![image](https://github.com/user-attachments/assets/91f92b73-3452-48d1-ae69-f84d86e6e3a4)
+   ![image](https://github.com/user-attachments/assets/1b1238a9-fc60-47c1-8ee0-bd731a224cdf)
+7. Flagnya bisa didapatkan
+   ![image](https://github.com/user-attachments/assets/62674f02-9c93-4313-adf3-2ac7e4d8428c)
+
+
 
 
