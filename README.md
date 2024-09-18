@@ -16,5 +16,16 @@
 5. Di rules soal shift terdapat clue yang harus di decrypt menggunakan base64 terlebih dahulu
 6. Lalu dapat ditemukan flagnya
    ![image](https://github.com/user-attachments/assets/1356d299-9483-4ff5-a2a5-0f1fe5268657)
+
+## Write Up Pegawai Negeri Sebelah
+1. Terdapat rahasia.pcap dan nc 10.15.42.60 53000 pada soal.
+2. Buka nc 10.15.42.60 53000 di terminal dan rahasia.pcap pada wireshark
+3. Disini kita menemukan data_pns.csv
+   ![image](https://github.com/user-attachments/assets/ff329d26-d2ba-474f-88ad-04afa84a8b7b)
+4. Jawab soal sesuai yang ada di data tersebut
+   ![image](https://github.com/user-attachments/assets/24bf2c5b-309e-47a9-8331-bd521beae2e3)
+5. Flag ditemukan
+   ![image](https://github.com/user-attachments/assets/5f1018f6-44e1-4e94-aaa2-6e4b0245dae7)
+
  
 
