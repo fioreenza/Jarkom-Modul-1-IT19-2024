@@ -87,7 +87,7 @@
 
 
 ## Write Up Gajah Terbang (Server Recon)
-1. Terdapat gajahterbang.pcapng dan nc 10.15.42.60 61000 48500 pada soal.
+1. Terdapat gajahterbang.pcapng dan nc 10.15.42.60 61000 pada soal.
 2. Buka ncat 10.15.42.60 61000 di terminal dan gajahterbang.pcapng pada wireshark
 3. Dari sini bisa dilihat DBMS nya menggunakan PostgreSQL
    ![image](https://github.com/user-attachments/assets/7049c772-e0ee-408d-98af-fd6e640dfe57)
@@ -106,3 +106,22 @@
    ![image](https://github.com/user-attachments/assets/e1522f8e-a80e-47e6-a1d8-131c2d7db65a)
 
 
+## Write Up Gajah Terbang (Server Recon)
+1. Terdapat gajahterbang.pcapng dan nc 10.15.42.60 62000 pada soal.
+2. Buka ncat 10.15.42.60 62000 di terminal dan gajahterbang.pcapng pada wireshark
+3. Follow TCP Stream
+   ![image](https://github.com/user-attachments/assets/e2779acd-b89e-4a55-b4f6-d434851ac3f1)
+4. Disini kita bisa mengetahui attackernya dengan cara mencoba coba data user email dari database ini, dan yang benar adalah kuntoajiisrillll@gmail.com serta dengan password aa1cbddbb1667f7227bcfdb25772 yang akan di decrypt menggunakan md5
+   ![image](https://github.com/user-attachments/assets/55c43a03-5718-4e3a-894e-d5464d6acb82)
+   ![image](https://github.com/user-attachments/assets/6368be31-11f8-40c9-a11b-507437f1010c)
+5. Penyerang di ban tanggal 2024-06-09
+   ![image](https://github.com/user-attachments/assets/0e8b7d80-12b1-4a6a-a7c9-1bedde391837)
+6. Tabel yang diserang adalah users dan banned users
+   ![image](https://github.com/user-attachments/assets/9e280c09-0406-46ba-99d7-1f6e60ef5cc0)
+7. Barang yang dibeli adalah rokok dan es krim, serta total transaksi yaitu dengan menjumlahkan harga dari rokok dan eskrim yang jumlahnya 24500
+   ![image](https://github.com/user-attachments/assets/855384f7-566e-4a34-abd5-4d303c079fb8)
+8. Lalu flag ditemukan
+   ![image](https://github.com/user-attachments/assets/a2dd76dd-9efd-4e6c-b752-26f08d39598e)
+
+
+   
