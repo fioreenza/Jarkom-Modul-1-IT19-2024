@@ -5,6 +5,7 @@
 | Fiorenza A.N. | 5027231053 |
 | Nicholas E.F. | 5027231070 |
 
+
 ## Write Up Advance Sanity Check
 1. Terdapat sanity.pcapng dan nc 10.15.42.60 44000 pada soal.
 2. Buka ncat 10.15.42.60 44000 di terminal dan sanity.pcapng pada wireshark
@@ -17,6 +18,7 @@
 6. Lalu dapat ditemukan flagnya
    ![image](https://github.com/user-attachments/assets/1356d299-9483-4ff5-a2a5-0f1fe5268657)
 
+
 ## Write Up Pegawai Negeri Sebelah
 1. Terdapat rahasia.pcap dan nc 10.15.42.60 53000 pada soal.
 2. Buka ncat 10.15.42.60 53000 di terminal dan rahasia.pcap pada wireshark
@@ -26,6 +28,7 @@
    ![image](https://github.com/user-attachments/assets/24bf2c5b-309e-47a9-8331-bd521beae2e3)
 5. Flag ditemukan
    ![image](https://github.com/user-attachments/assets/5f1018f6-44e1-4e94-aaa2-6e4b0245dae7)
+
 
  ## Write Up Corporate Breach
 1. Terdapat breach.pcap dan nc 10.15.42.60 51000 pada soal.
@@ -38,6 +41,7 @@
    ![image](https://github.com/user-attachments/assets/53f79d85-aa55-47e0-ab1e-39d985ddc764)
 6. Lalu ditemukan flagnya
    ![image](https://github.com/user-attachments/assets/0c78b378-6380-4c88-9ed2-6dbbf711c981)
+
 
 ## Write Up Malicious Code
 1. Terdapat breach.pcap dan nc 10.15.42.60 52000 pada soal.
@@ -54,6 +58,7 @@
 7. Disini saya mencoba coba warna untuk mendapatkan flag dan jawabannya adalah merah
    ![image](https://github.com/user-attachments/assets/59a2085f-d716-4320-9d13-b4e98a7be4c0)
 
+
 ## Write Up FTP Login
 1. Terdapat ftplogin.pcapng dan nc 10.15.42.60 49000 pada soal.
 2. Buka ncat 10.15.42.60 49000 di terminal dan ftplogin.pcapng pada wireshark
@@ -65,7 +70,7 @@
    ![image](https://github.com/user-attachments/assets/d64d1c0f-7c14-47a3-96c8-0c3927d6adae)
 
 
-## Write Up FTP Login
+## Write Up Surprise
 1. Terdapat ftplogin.pcapng dan nc 10.15.42.60 48500 pada soal.
 2. Buka ncat 10.15.42.60 48500 di terminal dan ftplogin.pcapng pada wireshark
 3. Ditemukan service yang digunakan
@@ -81,5 +86,23 @@
    ![image](https://github.com/user-attachments/assets/62674f02-9c93-4313-adf3-2ac7e4d8428c)
 
 
+## Write Up Gajah Terbang (Server Recon)
+1. Terdapat gajahterbang.pcapng dan nc 10.15.42.60 61000 48500 pada soal.
+2. Buka ncat 10.15.42.60 61000 di terminal dan gajahterbang.pcapng pada wireshark
+3. Dari sini bisa dilihat DBMS nya menggunakan PostgreSQL
+   ![image](https://github.com/user-attachments/assets/7049c772-e0ee-408d-98af-fd6e640dfe57)
+4. DBMS berjalan di port 6969
+   ![image](https://github.com/user-attachments/assets/5571de82-9df9-4173-8e00-830a0031e399)
+5. Follow TCP Stream
+   ![image](https://github.com/user-attachments/assets/e2779acd-b89e-4a55-b4f6-d434851ac3f1)
+6. Dari sini didapatkan server dijalankan di OS Debian, username s1gm4, dan databasenya sigmaskibidigyatrizzzz
+   ![image](https://github.com/user-attachments/assets/8d9bc6eb-3c6e-434d-be2b-bbd87991a58a)
+7. Disini juga terlihat terdapat 4 user di database
+   ![image](https://github.com/user-attachments/assets/1b9860b7-a00d-44bf-98ed-fdbfe451c609)
+8. Email yang digunakan admin adalah jojohermawan@gmail.com dan passwordnya c93ccd78b2076528346216b3b2f701e6 yang akan di decrypt menggunakan md5 
+   ![image](https://github.com/user-attachments/assets/24c148ee-2948-4c66-b2c4-80ef0206b0af)
+   ![image](https://github.com/user-attachments/assets/7859cad7-3b92-47cb-9fa2-18b1c482c0a6)
+9. Flag bisa didapatkan
+   ![image](https://github.com/user-attachments/assets/e1522f8e-a80e-47e6-a1d8-131c2d7db65a)
 
 
