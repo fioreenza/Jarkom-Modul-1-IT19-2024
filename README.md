@@ -152,7 +152,7 @@
 
 ## Write Up Illegal Breakthrough
 1. Terdapat break.pcapng dan nc 10.15.42.60 46000 pada soal.
-2. Buka ncat 10.15.42.60 46000 di terminal dan gajahterbang.pcapng pada wireshark
+2. Buka ncat 10.15.42.60 46000 di terminal dan break.pcapng pada wireshark
 3. Filter packet yang memiliki protocol http
    ![image](https://github.com/user-attachments/assets/bb13594c-19f6-4702-86f3-3bba962f398a)
 4. Disini terdapat IP Address dari korban yaitu 172.21.88.207 dan port yang digunakan webserver yaitu 1917
@@ -170,4 +170,7 @@
 
    
 
-## Write Up 
+## Write Up Packets Barrage
+1. Terdapat break.pcapng dan nc 10.15.42.60 47000 pada soal.
+2. Buka ncat 10.15.42.60 47000 di terminal dan break.pcapng pada wireshark
+3. 
