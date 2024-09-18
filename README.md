@@ -19,7 +19,7 @@
 
 ## Write Up Pegawai Negeri Sebelah
 1. Terdapat rahasia.pcap dan nc 10.15.42.60 53000 pada soal.
-2. Buka nc 10.15.42.60 53000 di terminal dan rahasia.pcap pada wireshark
+2. Buka ncat 10.15.42.60 53000 di terminal dan rahasia.pcap pada wireshark
 3. Disini kita menemukan data_pns.csv
    ![image](https://github.com/user-attachments/assets/ff329d26-d2ba-474f-88ad-04afa84a8b7b)
 4. Jawab soal sesuai yang ada di data tersebut
@@ -29,7 +29,7 @@
 
  ## Write Up Corporate Breach
 1. Terdapat breach.pcap dan nc 10.15.42.60 51000 pada soal.
-2. Buka nc nc 10.15.42.60 51000 di terminal dan breach.pcap pada wireshark
+2. Buka ncat 10.15.42.60 51000 di terminal dan breach.pcap pada wireshark
 3. Filter packet yang memiliki protocol http
    ![image](https://github.com/user-attachments/assets/b66b586f-cd98-482b-94e8-7249b4028b1c)
 4. Dari situ bisa didapatkan nama attacker yang ditanyakan
@@ -39,5 +39,20 @@
 6. Lalu ditemukan flagnya
    ![image](https://github.com/user-attachments/assets/0c78b378-6380-4c88-9ed2-6dbbf711c981)
 
+## Write Up Malicious Code
+1. Terdapat breach.pcap dan nc 10.15.42.60 52000 pada soal.
+2. Buka ncat 10.15.42.60 52000 di terminal dan breach.pcap pada wireshark
+3. Disini kita filter http yang method nya get untuk mendapatkan jumlah attacker melakukan dir listing
+   ![image](https://github.com/user-attachments/assets/7bd6ed0b-9f2d-4fce-9ab6-93c518f14b95)
+4. Disini bisa diketahui attacker menemukan endpoint login berupa index.php
+   ![image](https://github.com/user-attachments/assets/dddb3a44-2e98-4adb-89a2-8a2775511674)
+5. Lalu filter http.request.method == "POST" untuk mengetahui attempt ke berapa (169 dari display dikurangi 16)
+   ![image](https://github.com/user-attachments/assets/81b3e09b-2c74-42be-9559-b8f731130f0b)
+6. Disini hacker menjawab pertanyaan yang merupakan decimal, kita ubah dari decimal to text
+   ![image](https://github.com/user-attachments/assets/f95a3a12-2003-451e-98f3-861fc8135b72)
+   ![image](https://github.com/user-attachments/assets/7138a622-1e5d-4039-9fd8-627266fd73b9)
+7. Disini saya mencoba coba warna untuk mendapatkan flag dan jawabannya adalah merah
+   ![image](https://github.com/user-attachments/assets/59a2085f-d716-4320-9d13-b4e98a7be4c0)
+   
 
 
