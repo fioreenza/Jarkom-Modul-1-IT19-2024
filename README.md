@@ -124,4 +124,18 @@
    ![image](https://github.com/user-attachments/assets/a2dd76dd-9efd-4e6c-b752-26f08d39598e)
 
 
+## Write Up EZ
+1. Terdapat nc.pcapng dan nc 10.15.42.60 54000 pada soal.
+2. Buka ncat 10.15.42.60 54000 di terminal dan gajahterbang.pcapng pada wireshark
+3. Follow TCP Stream ke salah satu packet
+   ![image](https://github.com/user-attachments/assets/deca2e51-5e3c-4169-bf33-d558079b2d69)
+4. Hasilnya ditemukan string ini yang berisi jawaban
+   ![image](https://github.com/user-attachments/assets/73a88a83-6a68-47e5-881b-ff642865b92c)
+5. Temukan portnya di dst port yaitu 1234
+   ![image](https://github.com/user-attachments/assets/11aa7d0f-d6c0-4841-a131-e35f0de8d113)
+6. Flag dapat ditemukan
+   ![image](https://github.com/user-attachments/assets/81b987ab-aa2b-40c9-b5b0-e673bd176917)
+
+
+
    
