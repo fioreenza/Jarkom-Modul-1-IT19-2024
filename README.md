@@ -53,6 +53,17 @@
    ![image](https://github.com/user-attachments/assets/7138a622-1e5d-4039-9fd8-627266fd73b9)
 7. Disini saya mencoba coba warna untuk mendapatkan flag dan jawabannya adalah merah
    ![image](https://github.com/user-attachments/assets/59a2085f-d716-4320-9d13-b4e98a7be4c0)
+
+## Write Up FTP Login
+1. Terdapat ftplogin.pcapng dan nc 10.15.42.60 49000 pada soal.
+2. Buka ncat 10.15.42.60 49000 di terminal dan ftplogin.pcapng pada wireshark
+3. Disini kita filter ftp lalu sebelum login sucessfull terdapat user dan password yang berhasil digunakan untuk login
+   ![image](https://github.com/user-attachments/assets/8f4ada23-4e1f-4d2d-945a-a208c4b1e996)
+4. Follow TCP Stream untuk melihat lebih jelas
+   ![image](https://github.com/user-attachments/assets/66ca4877-5908-456e-b994-04382e3d7405)
+6. Lalu dapat ditemukan flagnya
+   ![image](https://github.com/user-attachments/assets/d64d1c0f-7c14-47a3-96c8-0c3927d6adae)
+
    
 
 
