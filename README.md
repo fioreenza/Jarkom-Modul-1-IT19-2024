@@ -150,4 +150,24 @@
    ![image](https://github.com/user-attachments/assets/87843df9-23d2-4084-b126-cc56edc9e8e3)
 
 
+## Write Up Illegal Breakthrough
+1. Terdapat break.pcapng dan nc 10.15.42.60 46000 pada soal.
+2. Buka ncat 10.15.42.60 46000 di terminal dan gajahterbang.pcapng pada wireshark
+3. Filter packet yang memiliki protocol http
+   ![image](https://github.com/user-attachments/assets/bb13594c-19f6-4702-86f3-3bba962f398a)
+4. Disini terdapat IP Address dari korban yaitu 172.21.88.207 dan port yang digunakan webserver yaitu 1917
+   ![image](https://github.com/user-attachments/assets/e2cb4238-963e-4a44-b8e6-0a8f346d89ed)
+5. Disini dapat dilihat bahwa endpoint untuk login yaitu /ww1.php
+   ![image](https://github.com/user-attachments/assets/022fe3fc-00a4-43c3-909e-f441d3cdd9e7)
+6. Follow TCP HTTP pada web yang found
+   ![image](https://github.com/user-attachments/assets/94c2027c-dd66-4cd6-a98f-edabeb7e0255)
+7. Disini dapat dilihat tools yang digunakan ffuf-v2.1.0-dev
+   ![image](https://github.com/user-attachments/assets/a92cf25a-52fd-4ffb-a48c-155ace6dda60)
+8. Kredensial untuk login yaitu Redbaron:fly1ng4c3
+   ![image](https://github.com/user-attachments/assets/0194e046-9524-4775-bcbf-6220fb640e6c)
+9. Lalu dapat ditemukan flagnya
+   ![image](https://github.com/user-attachments/assets/15987c88-141e-4ee2-8e70-ccda947b94b4)
+
    
+
+## Write Up 
