@@ -173,4 +173,20 @@
 ## Write Up Packets Barrage
 1. Terdapat break.pcapng dan nc 10.15.42.60 47000 pada soal.
 2. Buka ncat 10.15.42.60 47000 di terminal dan break.pcapng pada wireshark
-3. 
+3. Disini kita bisa menemukan IP Address attackernya yaitu 172.21.80.1
+   ![image](https://github.com/user-attachments/assets/7f564234-436e-48ca-97f8-2580078b1b9b)
+4. Lalu filter menggunakan http.request.method == "POST" untuk total attempt dari bruteforce attacker
+   ![image](https://github.com/user-attachments/assets/2370971e-b662-44cf-94ce-e9bf8b2997f9)
+5. Disini terlihat displayed packet dengan method post adalah 1918, namun ketika diinput ternyata salah. Jadi saya mencoba input 1917 atau menguranginya dengan 1 dan hasilnya benar
+   ![image](https://github.com/user-attachments/assets/acf5fb09-5e24-4b69-ae25-c9b4c975edfa)
+6. Untuk melihat file yang didownload yaitu dengan melakukan follow packet dibawah ini
+   ![image](https://github.com/user-attachments/assets/f1a9291e-bd33-42f4-b301-5ea7211fde50)
+7. Disini terdapat dua file, ketika dicoba Regev.zip salah, maka saya input lagi yaitu Albatros.txt
+   ![image](https://github.com/user-attachments/assets/03db6ef1-54c3-4397-b53a-0728995edcbb)
+8. Terdapat string berupa Der Rote Kampfflieger
+   ![image](https://github.com/user-attachments/assets/f157b89f-8a95-40aa-aa6e-6158afbcf978)
+9. Dapat ditemukan flagnya
+    ![image](https://github.com/user-attachments/assets/a6ebf65e-67e3-49bf-b293-8ef9029715c2)
+
+
+
