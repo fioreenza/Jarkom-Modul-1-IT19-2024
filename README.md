@@ -15,5 +15,6 @@
    ![image](https://github.com/user-attachments/assets/1a088fe9-48df-4cfa-83d4-afeb8efa99f1)
 5. Di rules soal shift terdapat clue yang harus di decrypt menggunakan base64 terlebih dahulu
 6. Lalu dapat ditemukan flagnya
-   <img width="738" alt="image" src="https://github.com/user-attachments/assets/2456414e-d08c-457c-baf9-f1d92b93d221">
+   ![image](https://github.com/user-attachments/assets/1356d299-9483-4ff5-a2a5-0f1fe5268657)
+ 
 
