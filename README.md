@@ -137,5 +137,17 @@
    ![image](https://github.com/user-attachments/assets/81b987ab-aa2b-40c9-b5b0-e673bd176917)
 
 
+## Write Up Rizzset
+1. Terdapat riset.pcapng dan nc 10.15.42.60 59500 pada soal.
+2. Buka ncat 10.15.42.60 59500 di terminal dan gajahterbang.pcapng pada wireshark
+3. Disini dapat dilihat domain dari dns query adalah www.its.ac.id
+   ![image](https://github.com/user-attachments/assets/13568186-9daa-4e2b-9594-e5b8ca6cc9d9)
+4. IP dari domain saya coba coba dan yang benar adalah 103.94.189.5
+   ![image](https://github.com/user-attachments/assets/ecdb768f-1ed8-467c-8185-8ac611bc06d5)
+5. JARM fingerprint yang dihasilkan bisa dilihat di jarm online atau menggunakan script py
+   ![image](https://github.com/user-attachments/assets/9373a534-a442-4459-b7ff-527722fbd9a2)
+6. Dapat ditemukan flagnya
+   ![image](https://github.com/user-attachments/assets/87843df9-23d2-4084-b126-cc56edc9e8e3)
+
 
    
