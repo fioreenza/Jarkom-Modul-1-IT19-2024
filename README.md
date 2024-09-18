@@ -3,4 +3,4 @@
 | Nama | NRP | 
 |----------|----------|
 | Fiorenza A.N. | 5027231053 |
-| nama | nrp |
+| Nicholas E.F. | 5027231070 |
