@@ -190,7 +190,7 @@
 
 
 
-   ## Write Up 22 Nightmare
+## Write Up 22 Nightmare
 1. Terdapat oimazrim.pcap dan nc 10.15.42.60 45000 pada soal.
 2. Buka ncat 10.15.42.60 45000 di terminal dan break.pcapng pada wireshark
 3. Filter ftp, disini bisa kita lihat file yang dikirim penyerang adalah Sh1k4.jpg
