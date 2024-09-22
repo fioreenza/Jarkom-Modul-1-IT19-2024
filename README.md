@@ -192,7 +192,7 @@
 
 ## Write Up 22 Nightmare
 1. Terdapat oimazrim.pcap dan nc 10.15.42.60 45000 pada soal.
-2. Buka ncat 10.15.42.60 45000 di terminal dan break.pcapng pada wireshark
+2. Buka ncat 10.15.42.60 45000 di terminal dan oimazrim.pcap pada wireshark
 3. Filter ftp, disini bisa kita lihat file yang dikirim penyerang adalah Sh1k4.jpg
    ![image](https://github.com/user-attachments/assets/a1b73b78-31d0-4095-8c79-718001531601)
 4. Export file yang dikirim, dan setelah diexport bisa kita lihat ada tulisan NUN
@@ -207,6 +207,28 @@
    ![image](https://github.com/user-attachments/assets/33a7c735-6174-48c7-a619-baf226c7e0dd)
    ![image](https://github.com/user-attachments/assets/0c8a2fa6-5924-435f-8078-09a9d22b85f4)
    ![image](https://github.com/user-attachments/assets/f4258aa0-8bac-4983-8cea-0b0da07dc79a)
+
+
+
+## Write Up inneRCE
+1. Terdapat inneRCE.pcapng dan nc 10.15.42.60 56000 pada soal.
+2. Buka ncat 10.15.42.60 56000 di terminal dan inneRCE.pcapng pada wireshark
+3. Filter http untuk melihat pada jam berapa penyerang berhasil mengupload webshell
+   ![image](https://github.com/user-attachments/assets/7152a4e2-fbc9-412b-a609-7317bb68b71d)
+4. Endpoint dan server yang rentan adalah upload.php dan server-app
+   ![image](https://github.com/user-attachments/assets/0e982765-5796-4a2d-a4ce-8e18a5df5bdc)
+5. Nama webshell yang diupload penyerang adalah idzoyyshell.php
+   ![image](https://github.com/user-attachments/assets/55d255d4-8e72-484d-a7f1-998a6e0aadc4)
+6. Command pertama yang berhasil dieksekusi oleh hacker adalah whoami
+   ![image](https://github.com/user-attachments/assets/06c5fa76-0fc6-4c25-b670-2798ecbd36b4)
+7. Untuk melihat kata kata yang dituliskan hacker, follow http stream packet 204. Disitu terdapat string yang harus didecryot menggunakan base 64.
+   ![image](https://github.com/user-attachments/assets/4a5c3e86-9ed3-4f70-a0d4-62630e10bd76)
+   ![image](https://github.com/user-attachments/assets/c7251961-3fb2-4e54-a072-c7057677dd87)
+8. Flag berhasil didapatkan
+   ![image](https://github.com/user-attachments/assets/5126b7a3-eeaa-4635-8d35-e8790f80616b)
+
+
+
 
 
 
