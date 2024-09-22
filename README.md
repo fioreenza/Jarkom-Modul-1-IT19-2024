@@ -189,6 +189,7 @@
     ![image](https://github.com/user-attachments/assets/a6ebf65e-67e3-49bf-b293-8ef9029715c2)
 
 
+
    ## Write Up 22 Nightmare
 1. Terdapat oimazrim.pcap dan nc 10.15.42.60 45000 pada soal.
 2. Buka ncat 10.15.42.60 45000 di terminal dan break.pcapng pada wireshark
