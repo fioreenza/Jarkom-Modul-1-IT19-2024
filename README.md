@@ -189,4 +189,29 @@
     ![image](https://github.com/user-attachments/assets/a6ebf65e-67e3-49bf-b293-8ef9029715c2)
 
 
+   ## Write Up 22 Nightmare
+1. Terdapat oimazrim.pcap dan nc 10.15.42.60 45000 pada soal.
+2. Buka ncat 10.15.42.60 45000 di terminal dan break.pcapng pada wireshark
+3. Filter ftp, disini bisa kita lihat file yang dikirim penyerang adalah Sh1k4.jpg
+   ![image](https://github.com/user-attachments/assets/a1b73b78-31d0-4095-8c79-718001531601)
+4. Export file yang dikirim, dan setelah diexport bisa kita lihat ada tulisan NUN
+   ![image](https://github.com/user-attachments/assets/4b87e4a5-0ca8-47fe-b260-f0fa3597d9e4)
+5. Follow TCP stream file kedua, lalu didapatkam bahwa file kedua dikirim di stream ke 141
+   ![image](https://github.com/user-attachments/assets/766e1eb7-a5a8-40af-b6ff-bfd8c4c47a3a)
+6. Nama pengirim terdapat pada petunjuk yang ada di file kedua, noko.py
+   ![image](https://github.com/user-attachments/assets/0181149b-5f46-449a-826a-bd836fd669af)
+7. Kita perlu decrypt xor binary dengan key jpg (atau tulisan yang ada di Sh1k4.jpg = nun), hasilnya adalah Torako Koshi
+   ![image](https://github.com/user-attachments/assets/1959b414-b8ad-4ce6-81d0-ab6122974a8f)
+8. Sehingga bisa didapatkan flagnya
+   ![image](https://github.com/user-attachments/assets/33a7c735-6174-48c7-a619-baf226c7e0dd)
+   ![image](https://github.com/user-attachments/assets/0c8a2fa6-5924-435f-8078-09a9d22b85f4)
+   ![image](https://github.com/user-attachments/assets/f4258aa0-8bac-4983-8cea-0b0da07dc79a)
+
+
+
+
+
+
+
+
 
